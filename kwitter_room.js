@@ -1,4 +1,5 @@
 
+
 //ADD YOUR FIREBASE LINKS HERE
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -37,3 +38,8 @@ document.getElementById("output").innerHTML+=row;
       });
 }
 getData();
+function redirectToRoomName(name){
+      console.log(name);
+      localStorage.setItem("room_name",name);
+      window.location="kwitter_page.html";
+}
